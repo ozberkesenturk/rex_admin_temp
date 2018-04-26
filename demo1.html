@@ -1,0 +1,971 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>demo1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--style-->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/fontello.css">
+    <!--Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Akronim|Asset|Bree+Serif|Cormorant+Garamond|Geostar|Jacques+Francois+Shadow|Nunito|Nunito+Sans|Playfair+Display+SC|Poiret+One|Ruthie|Seymour+One|Snowburst+One|Syncopate|Varela+Round|Work+Sans" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!--row1-->
+            <!--sidebar-->
+            <div class="col-md-2 sidebar-open " id="sidebar">
+                <div class="sidebar-title">
+                    <a href="#" id="sidebar-title-link"><h1>REX</h1></a>
+                </div>
+                <div id="sidebar-user-menu">
+                    <div id="sidebar-user-profile" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <img class="img-circle " src="inc/img/profile.jpg" alt="Dispute Bills">
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Alerts</a></li>
+                            <li><a href="#">Messages</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Settings</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="sidebar-user-notifications">
+                        <a href="#">
+                            <span class="glyphicon icon-globe-1">
+                            </span><span class="badge sidebarBadge">3</span>
+                        </a>
+                        <a href="#"><span class="glyphicon  icon-mail"></span><span class="badge sidebarBadge">9</span></a>
+                    </div>
+                    <div id="sidebar-search">
+                        <form class="navbar-form">
+                            <div class="input-group">
+                                <div class="input-group-btn" >
+                                    <button id="sidebar-search-button" class="btn"><span class="glyphicon icon-search-1"></span></button>
+                                </div>
+                                <input id="sidebar-search-text" type="text" class="form-control" placeholder="Search">
+                            </div>
+                        </form>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="panel-group" id="sidebar-nav">
+
+                    <div class="panel">
+                        <a href="#open1" class="sidebar-link" data-toggle="collapse" data-parent="#sidebar-nav">
+                            <div class="panel-heading">
+                                <i class="icon-home"></i> HOME
+                            </div>
+                        </a>
+                        <div id="open1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul>
+                                    <li><a href="#">Dashboard-1</a></li>
+                                    <li><a href="#">Dashboard-2</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <a href="#open2" class="sidebar-link" data-toggle="collapse" data-parent="#sidebar-nav">
+                            <div class="panel-heading">
+                                <i class="icon-doc-inv"></i> PAGES
+                            </div>
+                        </a>
+                        <div id="open2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul>
+                                    <li><a href="#">Profile</a></li>
+                                    <li><a href="#">Mailbox</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Sign İn</a></li>
+                                    <li><a href="#">Sign Out</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <a href="#open3" class="sidebar-link" data-toggle="collapse" data-parent="#sidebar-nav">
+                            <div class="panel-heading">
+                                <i class="icon-delicious"></i>  UI ELEMENTS
+                            </div>
+                        </a>
+                        <div id="open3" class="collapse panel-collapse">
+                            <div class="panel-body">
+                                <ul>
+                                    <li><a href="#">Cards</a></li>
+                                    <li><a href="#">Calendar</a></li>
+                                    <li><a href="#">İcons</a></li>
+                                    <li><a href="#">Typhography</a></li>
+                                    <li><a href="#">Tabs</a></li>
+                                    <li><a href="#">Lists</a></li>
+                                    <li><a href="#">Buttons</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <a href="#open4" class="sidebar-link" data-toggle="collapse" data-parent="#sidebar-nav">
+                            <div class="panel-heading">
+                                <i class="icon-doc-text-inv"></i>  FORMS
+                            </div>
+                        </a>
+                        <div id="open4" class="collapse panel-collapse">
+                            <div class="panel-body">
+                                <ul>
+                                    <li><a href="#">Form Layout</a></li>
+                                    <li><a href="#">Form Validation</a></li>
+                                    <li><a href="#">Form Wizard</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+  
+            </div>
+             <!--sidebar END-->
+            
+            <!--container-->
+            <div id="content-container">
+                <!--top-menu -->
+                <div class="row">
+                    <div class="col-md-12" id="navbarContainer">
+                        <nav class="navbar navbar-fixed-top" id="navbar">
+                            <div class="container-fluid">
+                                <div class="sidebar-open-close">
+                                    <a><i class="glyphicon icon-menu-outline"></i></a>
+                                </div>
+                                <div class="navbar-header">
+                                    <a class="navbar-brand" href="#">
+                                        <img class="img-circle " src="inc/img/profile.jpg" alt="Dispute Bills">
+                                    </a>
+                                </div>
+                                <div id="navbar1" class="navbar-collapse collapse">
+
+                                    <ul class="nav navbar-nav">
+                                        <li class="dropdown">
+                                            <a href="#" id="user-menu" class="dropdown-toggle navbar1-link" data-toggle="dropdown" role="button" aria-expanded="false">Jack <span class="caret"></span></a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a href="#">Alerts</a></li>
+                                                <li><a href="#">Messages</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">Settings</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="user-notification dropdown-toggle" id="user-notification-globe" data-toggle="dropdown" role="button" aria-expanded="false" href="#">
+                                                <span class="glyphicon icon-globe-1">
+                                                </span><span class="badge topmenuBadge">3</span>
+                                            </a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a href="#">Notification1</a></li>
+                                                <li><a href="#">Notification2</a></li>
+                                                <li><a href="#">Notification3</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">All Notifications</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a class="user-notification" id="user-notification-mail" href="#"><span class="glyphicon   icon-mail"></span><span class="badge topmenuBadge">9</span></a>
+                                        </li>
+                                    </ul>
+
+                                    <form class="navbar-form" ">
+                                        <div class="input-group">
+                                            <div class="input-group-btn">
+                                                <button id="searchBtn" class="btn"><span class="glyphicon icon-search-1"></span></button>
+                                            </div>
+                                            <input id="searchText" type="text" class="form-control" placeholder="Search">
+                                        </div>
+                                    </form>
+
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li><a class="navbar1-link" href="#">Account</a></li>
+                                        <li><a class="navbar1-link" href="#"><i class=" icon-logout"></i>Logout</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+
+                        </nav>
+
+                    </div>
+                </div>
+                <!--top menu END-->
+                
+                <!--Content-->
+                <div class="row">
+                    <div class="col-md-12" id="content">
+                        <div class="container-fluid">
+                            <div class="row basic-statistics">
+                                <div class="col-lg-3 col-sm-6">
+
+                                    <i class="icon-eye-1"></i>
+                                    <div class="dash-content">
+                                        <label>VISITS</label>
+                                        <h2>264.349</h2>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+
+                                    <i class="icon-basket"></i>
+                                    <div class="dash-content">
+                                        <label>SALES</label>
+                                        <h2>56.789</h2>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+
+                                    <i class="icon-money"></i>
+                                    <div class="dash-content">
+                                        <label>EARNINGS</label>
+                                        <h2>321.437 $</h2>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+
+                                    <i class="icon-money"></i>
+                                    <div class="dash-content">
+                                        <label>BEST SALE</label>
+                                        <h2>170 $</h2>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="text-center col-md-6 svg-base">
+                                    <div class="classWithPad">
+                                        <h2>Sales Analytics</h2>
+                                        <small>25.04.2018</small>
+                                        <i id="series1">%35</i>
+                                        <i id="series2">%35</i>
+                                        <i id="series3">%15</i>
+                                        <i id="series4">%15</i>
+                                        <div class="svg-div">
+                                            <?xml version="1.0" encoding="iso-8859-1" ?>
+                                            <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<path style="fill:#743e4c;" d="M0,256.16c0,38.425,8.628,76.299,25.074,110.656l211.446-122.08l-0.038-244.04
+	C104.383,10.804,0,121.518,0,256.16z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<path style="fill:#8f5924;" d="M467.544,400.348L256.001,277.973L44.456,399.865c22.089,32.411,51.324,59.378,85.424,78.64
+	c38.523,21.759,82.271,33.259,126.513,33.259c44.694,0,88.905-11.886,127.855-34.373
+	C417.526,458.179,446.012,431.768,467.544,400.348z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<path style="fill:#3a7859;" d="M383.778,33.896c-33.438-19.304-70.753-30.796-108.92-33.661l0.038,244.503l211.652,122.196
+	c26.706-55.259,32.659-117.567,16.612-177.458C485.445,123.369,443.048,68.116,383.778,33.896z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<path style="fill:#644370;" d="M256.001,277.973v233.785c0.132,0,0.262,0.006,0.394,0.006c44.694,0,88.905-11.886,127.855-34.373
+	c33.277-19.212,61.764-45.622,83.294-77.043L256.001,277.973z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+                                        </div>
+                                        <div class="color-tab">
+                                            <table>
+
+                                                <tr>
+                                                    <td><div class="color" style="background-color:#743e4c;"></div></td>
+                                                    <td>Series 1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><div class="color" style="background-color:#8f5924;"></div></td>
+                                                    <td>Series 1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><div class="color" style="background-color:#3a7859;"></div></td>
+                                                    <td>Series 1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><div class="color" style="background-color:#644370;"></div></td>
+                                                    <td>Series 1</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                
+                                <div class="text-center col-md-6 svg-base">
+                                    <div class="classWithPad">
+                                        <h2>Best Sellers</h2>
+                                        <small>25.04.2018</small>
+                                        <div class="svg-div">
+                                            <?xml version="1.0" ?>
+                                            <svg id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
+    .st0 {
+    fill: #743e4c;
+    }
+
+    .st1 {
+    fill: #553960;
+    }
+
+    .st2 {
+    fill: #644370;
+    }
+
+    .st3 {
+    fill: #bfbfbf;
+    }
+
+    .st4 {
+    fill: #664019;
+    }
+
+    .st5 {
+    fill: #664019;
+    }
+
+    .st6 {
+    fill: #8f5924;
+    }
+
+    .st7 {
+    fill: #522d37;
+    }
+
+    .st8 {
+    fill: #522d37;
+    }
+
+    .st9 {
+    fill: #743e4c;
+    }
+
+    .st10 {
+    fill: #32674d;
+    }
+
+    .st11 {
+    fill: #3a7859;
+    }
+
+    .st12 {
+    fill: #428a67;
+    }
+</style><g id="XMLID_645_"><g id="XMLID_569_"><polygon class="st0" id="XMLID_574_" points="157.1,506 157.1,492.7 165.8,492.7   " /><polygon class="st0" id="XMLID_573_" points="199.1,506 199.1,492.7 190.4,492.7   " /><polygon class="st1" id="XMLID_572_" points="156.6,422.5 177.9,437.6 199.5,422.5 199.5,492.7 156.6,492.7   " /><polygon class="st2" id="XMLID_571_" points="418.1,506 199.1,506 199.1,409.3 418.1,409.3 381.6,460   " /><rect class="st2" height="96.7" id="XMLID_570_" width="99.7" x="57.5" y="409.3" /><g id="XMLID_1403_"><path class="st3" d="M280.3,459.4l1.7-16.9h16.9v4.9H287l-0.8,7.1c0.6-0.4,1.3-0.8,2.1-1     c0.9-0.3,1.8-0.4,2.8-0.4c2.8,0,5,0.8,6.5,2.6c1.5,1.8,2.3,4.3,2.3,7.5c0,3-0.8,5.4-2.5,7.3c-1.7,1.9-4.2,2.8-7.7,2.8     c-2.8,0-5.2-0.7-7.1-2.2c-2-1.5-2.9-3.5-2.9-6.1l0-0.1l5.8-0.3c0,1.3,0.4,2.2,1.1,2.9c0.8,0.7,1.8,1.1,3,1.1     c1.4,0,2.5-0.5,3.1-1.4c0.7-0.9,1-2.3,1-4c0-1.7-0.4-3.1-1.1-4.2c-0.7-1-1.8-1.5-3.2-1.5c-1.2,0-2.1,0.2-2.7,0.6     c-0.6,0.4-1.1,1-1.3,1.7L280.3,459.4z" id="XMLID_643_" /><path class="st3" d="M318.3,472.8h-6v-25H306v-4.6l12.3-1.1V472.8z" id="XMLID_641_" /><path class="st3" d="M328.2,448.3c0-1.8,0.6-3.3,1.7-4.5c1.2-1.2,2.8-1.8,4.8-1.8c2.1,0,3.7,0.6,4.9,1.8     c1.1,1.2,1.7,2.7,1.7,4.5v1.6c0,1.8-0.6,3.3-1.7,4.4c-1.1,1.2-2.8,1.8-4.8,1.8c-2.1,0-3.7-0.6-4.9-1.8c-1.2-1.2-1.7-2.7-1.7-4.4     V448.3z M332.2,449.9c0,0.8,0.2,1.5,0.7,2c0.4,0.5,1.1,0.8,1.9,0.8c0.8,0,1.4-0.3,1.9-0.8c0.4-0.5,0.7-1.2,0.7-2v-1.6     c0-0.8-0.2-1.5-0.7-2c-0.4-0.6-1.1-0.8-1.9-0.8c-0.8,0-1.4,0.3-1.9,0.8c-0.4,0.6-0.7,1.2-0.7,2V449.9z M335.8,470.5l-2.9-1.6     l14.8-23.6l2.9,1.6L335.8,470.5z M342.6,465.3c0-1.8,0.6-3.3,1.7-4.4c1.2-1.2,2.8-1.8,4.8-1.8c2.1,0,3.7,0.6,4.8,1.8     c1.2,1.2,1.7,2.7,1.7,4.5v1.6c0,1.8-0.6,3.3-1.7,4.5c-1.1,1.2-2.8,1.8-4.8,1.8c-2.1,0-3.7-0.6-4.9-1.8c-1.2-1.2-1.8-2.7-1.8-4.5     V465.3z M346.6,466.9c0,0.8,0.2,1.5,0.7,2c0.5,0.6,1.1,0.8,1.9,0.8c0.9,0,1.5-0.3,1.9-0.8c0.4-0.5,0.6-1.2,0.6-2.1v-1.6     c0-0.8-0.2-1.5-0.7-2c-0.4-0.6-1.1-0.8-1.9-0.8c-0.8,0-1.5,0.3-1.9,0.8c-0.4,0.6-0.7,1.2-0.7,2V466.9z" id="XMLID_635_" /></g></g><g id="XMLID_557_"><polygon class="st4" id="XMLID_562_" points="157.1,235.5 157.1,222.2 165.8,222.2   " /><polygon class="st4" id="XMLID_561_" points="199.1,235.5 199.1,222.2 190.4,222.2   " /><polygon class="st5" id="XMLID_560_" points="156.6,152 177.9,167.1 199.5,152 199.5,222.2 156.6,222.2   " /><polygon class="st6" id="XMLID_559_" points="442.4,235.4 199.1,235.4 199.1,138.7 442.4,138.7 405.9,189.5   " /><rect class="st6" height="96.7" id="XMLID_558_" width="99.7" x="57.5" y="138.7" /><g id="XMLID_1401_"><path class="st3" d="M282.2,188.9l1.8-17.6h17.5v5.1h-12.4l-0.9,7.3c0.6-0.4,1.3-0.8,2.2-1.1     c0.9-0.3,1.9-0.4,2.9-0.5c2.9,0,5.2,0.9,6.8,2.7c1.6,1.8,2.4,4.4,2.4,7.8c0,3.1-0.9,5.6-2.6,7.6c-1.7,2-4.4,3-8,3     c-2.9,0-5.4-0.8-7.4-2.3c-2.1-1.5-3.1-3.6-3-6.3l0-0.1l6.1-0.3c0,1.3,0.4,2.3,1.2,3.1c0.8,0.7,1.8,1.1,3.1,1.1     c1.5,0,2.6-0.5,3.3-1.5c0.7-1,1-2.4,1-4.2c0-1.8-0.4-3.3-1.1-4.3c-0.7-1.1-1.9-1.6-3.3-1.6c-1.2,0-2.1,0.2-2.8,0.7     c-0.6,0.4-1.1,1.1-1.4,1.8L282.2,188.9z" id="XMLID_623_" /><path class="st3" d="M317.1,184.3c1.5,0,2.6-0.4,3.3-1.2c0.7-0.8,1.1-1.9,1.1-3.3c0-1.2-0.4-2.2-1.1-2.9     c-0.8-0.8-1.8-1.2-3.2-1.2c-1.2,0-2.1,0.4-2.9,1.1c-0.8,0.7-1.2,1.6-1.2,2.7H307l0-0.1c-0.1-2.5,0.9-4.5,2.8-6.1     c2-1.6,4.4-2.4,7.4-2.4c3.3,0,5.8,0.8,7.8,2.3c1.9,1.5,2.9,3.7,2.9,6.6c0,1.4-0.4,2.8-1.2,4c-0.8,1.2-2,2.1-3.4,2.8     c1.6,0.6,2.9,1.6,3.8,2.8c0.9,1.3,1.3,2.8,1.3,4.6c0,2.9-1,5.1-3.1,6.8c-2.1,1.6-4.7,2.5-8,2.5c-2.9,0-5.4-0.8-7.5-2.3     c-2.1-1.6-3.2-3.7-3.1-6.5l0-0.1h6.1c0,1.2,0.4,2.2,1.2,3c0.8,0.8,1.9,1.2,3.2,1.2c1.4,0,2.6-0.4,3.5-1.3     c0.9-0.8,1.3-1.9,1.3-3.2c0-1.7-0.4-2.9-1.3-3.7c-0.8-0.8-2.1-1.2-3.7-1.2h-3.5v-4.7H317.1z" id="XMLID_621_" /><path class="st3" d="M332,177.4c0-1.9,0.6-3.4,1.8-4.6c1.2-1.2,2.9-1.9,5-1.9c2.2,0,3.9,0.6,5.1,1.8     c1.2,1.2,1.8,2.8,1.8,4.7v1.7c0,1.9-0.6,3.4-1.8,4.6c-1.2,1.2-2.9,1.8-5,1.8c-2.2,0-3.8-0.6-5.1-1.8c-1.2-1.2-1.8-2.8-1.8-4.6     V177.4z M336.2,179.1c0,0.8,0.2,1.5,0.7,2.1c0.5,0.6,1.1,0.9,2,0.9c0.8,0,1.5-0.3,1.9-0.9c0.5-0.6,0.7-1.3,0.7-2.1v-1.7     c0-0.8-0.2-1.5-0.7-2.1c-0.5-0.6-1.1-0.9-2-0.9c-0.8,0-1.5,0.3-2,0.9c-0.5,0.6-0.7,1.3-0.7,2.1V179.1z M339.9,200.4l-3.1-1.6     l15.3-24.6l3.1,1.6L339.9,200.4z M347,195.1c0-1.8,0.6-3.4,1.8-4.6c1.2-1.2,2.9-1.9,5-1.9c2.2,0,3.8,0.6,5,1.8     c1.2,1.2,1.8,2.8,1.8,4.6v1.7c0,1.9-0.6,3.4-1.8,4.6c-1.2,1.2-2.9,1.8-5,1.8c-2.2,0-3.8-0.6-5.1-1.8c-1.2-1.2-1.8-2.8-1.8-4.6     V195.1z M351.2,196.8c0,0.8,0.2,1.5,0.7,2.1c0.5,0.6,1.1,0.9,2,0.9c0.9,0,1.6-0.3,2-0.8c0.4-0.5,0.6-1.3,0.6-2.2v-1.7     c0-0.8-0.2-1.5-0.7-2.1c-0.5-0.6-1.1-0.9-2-0.9c-0.9,0-1.5,0.3-2,0.9c-0.5,0.6-0.7,1.3-0.7,2.1V196.8z" id="XMLID_615_" /></g></g><g id="XMLID_436_"><polygon class="st7" id="XMLID_435_" points="157.1,102.7 157.1,89.5 165.8,89.5   " /><polygon class="st7" id="XMLID_437_" points="199.1,102.7 199.1,89.5 190.4,89.5   " /><polygon class="st8" id="XMLID_5_" points="156.6,19.2 177.9,34.3 199.5,19.2 199.5,89.5 156.6,89.5   " /><polygon class="st9" id="XMLID_191_" points="454.5,102.7 199.1,102.7 199.1,6 454.5,6 418.1,56.7   " /><rect class="st9" height="96.7" id="XMLID_192_" width="99.7" x="57.5" y="6" /><g id="XMLID_1400_"><path class="st3" d="M283,56.2l1.8-17.6h17.5v5.1h-12.4l-0.9,7.3c0.6-0.4,1.3-0.8,2.2-1.1     c0.9-0.3,1.9-0.4,2.9-0.5c2.9,0,5.2,0.9,6.8,2.7c1.6,1.8,2.4,4.4,2.4,7.8c0,3.1-0.9,5.6-2.6,7.6c-1.7,2-4.4,3-8,3     c-2.9,0-5.4-0.8-7.4-2.3c-2.1-1.5-3.1-3.6-3-6.3l0-0.1l6.1-0.3c0,1.3,0.4,2.3,1.2,3.1c0.8,0.7,1.8,1.1,3.1,1.1     c1.5,0,2.6-0.5,3.3-1.5c0.7-1,1-2.4,1-4.2c0-1.8-0.4-3.3-1.1-4.3c-0.7-1.1-1.9-1.6-3.3-1.6c-1.2,0-2.1,0.2-2.8,0.7     c-0.6,0.4-1.1,1.1-1.4,1.8L283,56.2z" id="XMLID_613_" /><path class="st3" d="M326,58.4h3.5v4.9H326v6.8h-6.3v-6.8h-12.8l-0.3-3.8l13-20.8h6.4V58.4z M312.3,58.4h7.4     V46.9l-0.1,0l-0.6,1.4L312.3,58.4z" id="XMLID_610_" /><path class="st3" d="M332.8,44.7c0-1.9,0.6-3.4,1.8-4.6c1.2-1.2,2.9-1.9,5-1.9c2.2,0,3.9,0.6,5.1,1.8     c1.2,1.2,1.8,2.8,1.8,4.7v1.7c0,1.9-0.6,3.4-1.8,4.6c-1.2,1.2-2.9,1.8-5,1.8c-2.2,0-3.8-0.6-5.1-1.8c-1.2-1.2-1.8-2.8-1.8-4.6     V44.7z M336.9,46.3c0,0.8,0.2,1.5,0.7,2.1c0.5,0.6,1.1,0.9,2,0.9c0.8,0,1.5-0.3,1.9-0.9c0.5-0.6,0.7-1.3,0.7-2.1v-1.7     c0-0.8-0.2-1.5-0.7-2.1c-0.5-0.6-1.1-0.9-2-0.9c-0.8,0-1.5,0.3-2,0.9c-0.5,0.6-0.7,1.3-0.7,2.1V46.3z M340.7,67.7l-3.1-1.6     l15.3-24.6l3.1,1.6L340.7,67.7z M347.8,62.4c0-1.8,0.6-3.4,1.8-4.6c1.2-1.2,2.9-1.9,5-1.9c2.2,0,3.8,0.6,5,1.8     c1.2,1.2,1.8,2.8,1.8,4.6V64c0,1.9-0.6,3.4-1.8,4.6c-1.2,1.2-2.9,1.8-5,1.8c-2.2,0-3.8-0.6-5.1-1.8c-1.2-1.2-1.8-2.8-1.8-4.6     V62.4z M352,64c0,0.8,0.2,1.5,0.7,2.1c0.5,0.6,1.1,0.9,2,0.9c0.9,0,1.6-0.3,2-0.8c0.4-0.5,0.6-1.3,0.6-2.2v-1.7     c0-0.8-0.2-1.5-0.7-2.1c-0.5-0.6-1.1-0.9-2-0.9c-0.9,0-1.5,0.3-2,0.9c-0.5,0.6-0.7,1.3-0.7,2.1V64z" id="XMLID_604_" /></g></g><g id="XMLID_563_"><polygon class="st10" id="XMLID_566_" points="156.6,286.2 177.9,301.3 199.5,286.2 199.5,356.4 156.6,356.4   " /><polygon class="st11" id="XMLID_565_" points="430.2,369.6 199.1,369.6 199.1,272.9 430.2,272.9 393.7,323.6   " /><rect class="st11" height="96.7" id="XMLID_564_" width="99.7" x="57.5" y="272.9" /><g id="XMLID_1402_"><path class="st3" d="M281.6,323.1l1.8-17.6H301v5.1h-12.4l-0.9,7.3c0.6-0.4,1.3-0.8,2.2-1.1     c0.9-0.3,1.9-0.4,2.9-0.5c2.9,0,5.2,0.9,6.8,2.7c1.6,1.8,2.4,4.4,2.4,7.8c0,3.1-0.9,5.6-2.6,7.6c-1.7,2-4.4,3-8,3     c-2.9,0-5.4-0.8-7.4-2.3c-2.1-1.5-3.1-3.6-3-6.3l0-0.1l6.1-0.3c0,1.3,0.4,2.3,1.2,3.1c0.8,0.7,1.8,1.1,3.1,1.1     c1.5,0,2.6-0.5,3.3-1.5c0.7-1,1-2.4,1-4.2c0-1.8-0.4-3.3-1.1-4.3c-0.7-1.1-1.9-1.6-3.3-1.6c-1.2,0-2.1,0.2-2.8,0.7     c-0.6,0.4-1.1,1.1-1.4,1.8L281.6,323.1z" id="XMLID_633_" /><path class="st3" d="M327.6,337h-21.1v-4.1l9.7-11c1.5-1.7,2.5-3.2,3.1-4.4c0.6-1.2,0.9-2.3,0.9-3.3     c0-1.3-0.3-2.3-1-3.1c-0.6-0.8-1.6-1.2-2.9-1.2c-1.4,0-2.4,0.5-3.2,1.5c-0.7,1-1.1,2.3-1.1,3.8h-6.1l0-0.1     c-0.1-2.8,0.8-5.2,2.8-7.1c1.9-1.9,4.5-2.9,7.7-2.9c3.2,0,5.7,0.8,7.5,2.5c1.8,1.6,2.7,3.9,2.7,6.6c0,1.9-0.5,3.6-1.5,5.2     c-1,1.6-2.7,3.7-5.2,6.5l-5.2,6.2l0,0.1h12.8V337z" id="XMLID_631_" /><path class="st3" d="M331.4,311.6c0-1.9,0.6-3.4,1.8-4.6c1.2-1.2,2.9-1.9,5-1.9c2.2,0,3.9,0.6,5.1,1.8     c1.2,1.2,1.8,2.8,1.8,4.7v1.7c0,1.9-0.6,3.4-1.8,4.6c-1.2,1.2-2.9,1.8-5,1.8c-2.2,0-3.8-0.6-5.1-1.8c-1.2-1.2-1.8-2.8-1.8-4.6     V311.6z M335.6,313.2c0,0.8,0.2,1.5,0.7,2.1c0.5,0.6,1.1,0.9,2,0.9c0.8,0,1.5-0.3,1.9-0.9c0.5-0.6,0.7-1.3,0.7-2.1v-1.7     c0-0.8-0.2-1.5-0.7-2.1c-0.5-0.6-1.1-0.9-2-0.9c-0.8,0-1.5,0.3-2,0.9c-0.5,0.6-0.7,1.3-0.7,2.1V313.2z M339.3,334.6l-3.1-1.6     l15.3-24.6l3.1,1.6L339.3,334.6z M346.4,329.3c0-1.8,0.6-3.4,1.8-4.6c1.2-1.2,2.9-1.9,5-1.9c2.2,0,3.8,0.6,5,1.8     c1.2,1.2,1.8,2.8,1.8,4.6v1.7c0,1.9-0.6,3.4-1.8,4.6c-1.2,1.2-2.9,1.8-5,1.8c-2.2,0-3.8-0.6-5.1-1.8c-1.2-1.2-1.8-2.8-1.8-4.6     V329.3z M350.6,330.9c0,0.8,0.2,1.5,0.7,2.1c0.5,0.6,1.1,0.9,2,0.9c0.9,0,1.6-0.3,2-0.8c0.4-0.5,0.6-1.3,0.6-2.2v-1.7     c0-0.8-0.2-1.5-0.7-2.1c-0.5-0.6-1.1-0.9-2-0.9c-0.9,0-1.5,0.3-2,0.9c-0.5,0.6-0.7,1.3-0.7,2.1V330.9z" id="XMLID_625_" /></g></g><polygon class="st12" id="XMLID_568_" points="157.1,369.6 157.1,356.4 165.9,356.4  " /><polygon class="st12" id="XMLID_567_" points="199.1,369.7 199.1,356.4 190.3,356.4  " /></g></svg>
+
+                                        </div>
+                                        <div class="color-tab">
+                                            <table>
+
+                                                <tr>
+                                                    <td><div class="color" style="background-color:#743e4c;"></div></td>
+                                                    <td>Series 1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><div class="color" style="background-color:#8f5924;"></div></td>
+                                                    <td>Series 1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><div class="color" style="background-color:#3a7859;"></div></td>
+                                                    <td>Series 1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><div class="color" style="background-color:#644370;"></div></td>
+                                                    <td>Series 1</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 svg-base" >
+                                    <div class="classWithPad" id="ySales">
+                                        <h2>Yearly Sales</h2>
+                                        <i id="y2018">2018</i>
+                                        <i id="y2017">2017</i>
+                                        <i id="y2016">2016</i>
+                                        <div class="svg-div" id="svg-base-3">
+                                            <?xml version="1.0" ?>
+                                            <svg id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
+    .stt0{fill:#8f5924;}
+    .stt1{fill:#a36629;}
+    .stt2{fill:#bfbfbf;}
+    .stt3{fill:#3a7859;}
+    .stt4{fill:#428a66;}
+    .stt5{fill:#743e4c;}
+    .stt6{fill:#854758;}
+</style><g id="XMLID_855_"><g id="XMLID_983_"><polygon class="stt0" id="XMLID_1000_" points="114.2,475.2 114.2,379.9 388.7,379.9 426.2,427.5 388.7,475.2   " /><g id="XMLID_984_"><g id="XMLID_997_"><path class="stt0" d="M91.3,506c-43.3,0-78.5-35.2-78.5-78.5s35.2-78.5,78.5-78.5s78.5,35.2,78.5,78.5      S134.5,506,91.3,506z" id="XMLID_999_" /><circle class="stt1" cx="91.3" cy="427.5" id="XMLID_998_" r="63" /></g><g id="XMLID_985_"><path class="stt2" d="M58.5,424.4c1.7,0,2.9-0.4,3.7-1.3c0.8-0.9,1.2-2.1,1.2-3.7c0-1.3-0.4-2.4-1.3-3.3      c-0.9-0.9-2-1.3-3.6-1.3c-1.3,0-2.4,0.4-3.3,1.2c-0.9,0.8-1.3,1.8-1.3,3h-6.8l0-0.1c-0.1-2.8,1-5,3.2-6.8c2.2-1.8,5-2.7,8.2-2.7      c3.6,0,6.5,0.9,8.7,2.6c2.1,1.7,3.2,4.2,3.2,7.4c0,1.6-0.5,3.1-1.4,4.4c-0.9,1.3-2.2,2.4-3.8,3.2c1.8,0.7,3.3,1.7,4.3,3.2      s1.5,3.1,1.5,5.1c0,3.2-1.2,5.8-3.5,7.6c-2.3,1.8-5.3,2.8-9,2.8c-3.2,0-6-0.9-8.4-2.6c-2.4-1.7-3.6-4.2-3.5-7.3l0-0.1h6.9      c0,1.3,0.5,2.4,1.4,3.3c0.9,0.9,2.1,1.3,3.6,1.3c1.6,0,2.9-0.5,3.9-1.4c1-1,1.5-2.2,1.5-3.6c0-1.9-0.5-3.2-1.4-4.1      c-0.9-0.9-2.3-1.3-4.1-1.3h-3.9v-5.3H58.5z" id="XMLID_995_" /><path class="stt2" d="M99,432.4c0,4.1-1.1,7.4-3.3,9.7c-2.2,2.4-5,3.5-8.6,3.5c-3.6,0-6.5-1.2-8.7-3.5      c-2.2-2.4-3.3-5.6-3.3-9.7v-9.7c0-4.1,1.1-7.4,3.3-9.7c2.2-2.4,5.1-3.6,8.6-3.6c3.6,0,6.5,1.2,8.6,3.6c2.2,2.4,3.3,5.6,3.3,9.7      V432.4z M92,422c0-2.3-0.4-4-1.3-5.2c-0.9-1.2-2.1-1.9-3.6-1.9c-1.5,0-2.7,0.6-3.6,1.9c-0.8,1.2-1.3,3-1.3,5.2v11.1      c0,2.3,0.4,4.1,1.3,5.3c0.9,1.2,2.1,1.8,3.6,1.8c1.5,0,2.7-0.6,3.6-1.8s1.3-3,1.3-5.3V422z" id="XMLID_992_" /><path class="stt2" d="M103.6,416.7c0-2.1,0.7-3.8,2-5.2c1.3-1.4,3.2-2.1,5.6-2.1c2.4,0,4.3,0.7,5.7,2.1      c1.3,1.4,2,3.1,2,5.2v1.9c0,2.1-0.7,3.8-2,5.2c-1.3,1.4-3.2,2.1-5.6,2.1c-2.4,0-4.3-0.7-5.7-2.1c-1.4-1.4-2-3.1-2-5.2V416.7z       M108.3,418.6c0,0.9,0.3,1.7,0.8,2.4c0.5,0.6,1.3,1,2.2,1c0.9,0,1.7-0.3,2.2-1c0.5-0.6,0.8-1.4,0.8-2.4v-1.9      c0-0.9-0.3-1.7-0.8-2.4c-0.5-0.7-1.2-1-2.2-1c-1,0-1.7,0.3-2.2,1c-0.5,0.7-0.8,1.4-0.8,2.4V418.6z M112.5,442.5l-3.4-1.8      l17.2-27.5l3.4,1.8L112.5,442.5z M120.5,436.5c0-2.1,0.7-3.8,2-5.2c1.4-1.4,3.2-2.1,5.6-2.1c2.4,0,4.3,0.7,5.6,2.1      c1.3,1.4,2,3.1,2,5.2v1.9c0,2.1-0.7,3.8-2,5.2c-1.3,1.4-3.2,2.1-5.6,2.1c-2.4,0-4.3-0.7-5.7-2.1c-1.4-1.4-2-3.1-2-5.2V436.5z       M125.2,438.4c0,0.9,0.3,1.7,0.8,2.4c0.6,0.7,1.3,1,2.2,1c1,0,1.8-0.3,2.2-0.9c0.5-0.6,0.7-1.4,0.7-2.4v-1.9      c0-0.9-0.3-1.7-0.8-2.4c-0.5-0.7-1.2-1-2.2-1c-1,0-1.7,0.3-2.2,1c-0.5,0.7-0.8,1.4-0.8,2.4V438.4z" id="XMLID_986_" /></g></g></g><g id="XMLID_919_"><polygon class="stt3" id="XMLID_982_" points="114.2,303.7 114.2,208.3 425.2,208.3 462.7,256 425.2,303.7   " /><g id="XMLID_920_"><g id="XMLID_979_"><path class="stt3" d="M91.3,334.5c-43.3,0-78.5-35.2-78.5-78.5s35.2-78.5,78.5-78.5s78.5,35.2,78.5,78.5      S134.5,334.5,91.3,334.5z" id="XMLID_981_" /><circle class="stt4" cx="91.3" cy="256" id="XMLID_980_" r="63" /></g><g id="XMLID_921_"><path class="stt2" d="M60.6,237.9c1.4,0,2.6,0.1,3.8,0.4c1.2,0.2,2.3,0.6,3.5,1.1l-1.3,5.2      c-1.1-0.4-2.1-0.6-3-0.8c-0.9-0.2-1.9-0.3-3-0.3c-2.1,0-3.7,0.8-5,2.4c-1.3,1.6-1.9,3.8-1.9,6.6v1.1c0.9-0.9,2.1-1.6,3.3-2.1      c1.3-0.5,2.7-0.8,4.3-0.8c3,0,5.4,1.1,7.1,3.2c1.7,2.1,2.5,4.9,2.5,8.4c0,3.5-1.1,6.4-3.3,8.6c-2.2,2.2-5.1,3.3-8.6,3.3      c-3.7,0-6.7-1.3-9-3.8c-2.3-2.5-3.5-6-3.5-10.3v-7.4c0-4.5,1.3-8,3.9-10.7C53.3,239.2,56.6,237.9,60.6,237.9z M59.1,256      c-1.3,0-2.4,0.2-3.3,0.6c-0.9,0.4-1.6,1-2.1,1.7v1.9c0,2.7,0.5,4.8,1.5,6.3c1,1.5,2.3,2.2,3.9,2.2c1.5,0,2.6-0.6,3.5-1.8      c0.9-1.2,1.3-2.8,1.3-4.7c0-1.9-0.4-3.5-1.3-4.6C61.8,256.5,60.6,256,59.1,256z" id="XMLID_976_" /><path class="stt2" d="M99,260.9c0,4.1-1.1,7.4-3.3,9.7c-2.2,2.4-5,3.5-8.6,3.5c-3.6,0-6.5-1.2-8.7-3.5      c-2.2-2.4-3.3-5.6-3.3-9.7v-9.7c0-4.1,1.1-7.4,3.3-9.7c2.2-2.4,5.1-3.6,8.6-3.6c3.6,0,6.5,1.2,8.6,3.6c2.2,2.4,3.3,5.6,3.3,9.7      V260.9z M92,250.4c0-2.3-0.4-4-1.3-5.2c-0.9-1.2-2.1-1.9-3.6-1.9c-1.5,0-2.7,0.6-3.6,1.9c-0.8,1.2-1.3,3-1.3,5.2v11.1      c0,2.3,0.4,4.1,1.3,5.3c0.9,1.2,2.1,1.8,3.6,1.8c1.5,0,2.7-0.6,3.6-1.8s1.3-3,1.3-5.3V250.4z" id="XMLID_928_" /><path class="stt2" d="M103.6,245.2c0-2.1,0.7-3.8,2-5.2c1.3-1.4,3.2-2.1,5.6-2.1c2.4,0,4.3,0.7,5.7,2.1      c1.3,1.4,2,3.1,2,5.2v1.9c0,2.1-0.7,3.8-2,5.2c-1.3,1.4-3.2,2.1-5.6,2.1c-2.4,0-4.3-0.7-5.7-2.1c-1.4-1.4-2-3.1-2-5.2V245.2z       M108.3,247c0,0.9,0.3,1.7,0.8,2.4c0.5,0.6,1.3,1,2.2,1c0.9,0,1.7-0.3,2.2-1c0.5-0.6,0.8-1.4,0.8-2.4v-1.9      c0-0.9-0.3-1.7-0.8-2.4c-0.5-0.7-1.2-1-2.2-1c-1,0-1.7,0.3-2.2,1c-0.5,0.7-0.8,1.4-0.8,2.4V247z M112.4,271l-3.4-1.8l17.2-27.5      l3.4,1.8L112.4,271z M120.4,265c0-2.1,0.7-3.8,2-5.2c1.4-1.4,3.2-2.1,5.6-2.1c2.4,0,4.3,0.7,5.6,2.1c1.3,1.4,2,3.1,2,5.2v1.9      c0,2.1-0.7,3.8-2,5.2c-1.3,1.4-3.2,2.1-5.6,2.1c-2.4,0-4.3-0.7-5.7-2.1c-1.4-1.4-2-3.1-2-5.2V265z M125.1,266.8      c0,0.9,0.3,1.7,0.8,2.4c0.6,0.7,1.3,1,2.2,1c1,0,1.8-0.3,2.2-0.9c0.5-0.6,0.7-1.4,0.7-2.4V265c0-0.9-0.3-1.7-0.8-2.4      c-0.5-0.7-1.2-1-2.2-1c-1,0-1.7,0.3-2.2,1c-0.5,0.7-0.8,1.4-0.8,2.4V266.8z" id="XMLID_922_" /></g></g></g><g id="XMLID_868_"><polygon class="stt5" id="XMLID_918_" points="114.2,130.4 114.2,35 461.7,35 499.2,82.7 461.7,130.4   " /><g id="XMLID_869_"><g id="XMLID_913_"><path class="stt5" d="M91.3,162.9c-43.3,0-78.5-35.2-78.5-78.5S48,6,91.3,6s78.5,35.2,78.5,78.5      S134.5,162.9,91.3,162.9z" id="XMLID_915_" /><circle class="stt6" cx="91.3" cy="84.5" id="XMLID_914_" r="63" /></g><g id="XMLID_870_"><path class="stt2" d="M57.5,97.2c1.7,0,3.2-0.7,4.3-2c1.1-1.3,1.7-3.1,1.7-5.5v-2.3c-0.8,1-1.7,1.8-2.8,2.3      c-1.1,0.5-2.2,0.8-3.5,0.8c-3.3,0-5.8-1.1-7.7-3.2c-1.9-2.1-2.8-5-2.8-8.7c0-3.5,1.1-6.5,3.3-8.8c2.2-2.3,5-3.5,8.5-3.5      c3.5,0,6.4,1.2,8.7,3.6c2.2,2.4,3.4,5.7,3.4,9.9v9.5c0,4.1-1.2,7.3-3.7,9.7c-2.4,2.4-5.6,3.6-9.3,3.6c-1.2,0-2.5-0.1-3.8-0.4      c-1.3-0.3-2.5-0.6-3.7-1.1l1.2-5.1c1,0.4,2,0.7,3,0.9C55.1,97.1,56.2,97.2,57.5,97.2z M58.3,85.3c1.1,0,2.2-0.2,3-0.7      c0.9-0.5,1.6-1.1,2.1-1.9v-4.1c0-2.2-0.5-3.9-1.4-5.1c-0.9-1.2-2.1-1.8-3.6-1.8c-1.4,0-2.6,0.7-3.4,2c-0.9,1.3-1.3,2.9-1.3,4.8      c0,2,0.4,3.6,1.2,4.9C55.7,84.7,56.8,85.3,58.3,85.3z" id="XMLID_910_" /><path class="stt2" d="M99.1,89.3c0,4.1-1.1,7.4-3.3,9.7c-2.2,2.4-5,3.5-8.6,3.5c-3.6,0-6.5-1.2-8.7-3.5      c-2.2-2.4-3.3-5.6-3.3-9.7v-9.7c0-4.1,1.1-7.4,3.3-9.7c2.2-2.4,5.1-3.6,8.6-3.6c3.6,0,6.5,1.2,8.6,3.6c2.2,2.4,3.3,5.6,3.3,9.7      V89.3z M92.1,78.9c0-2.3-0.4-4-1.3-5.2c-0.9-1.2-2.1-1.9-3.6-1.9c-1.5,0-2.7,0.6-3.6,1.9c-0.8,1.2-1.3,3-1.3,5.2V90      c0,2.3,0.4,4.1,1.3,5.3c0.9,1.2,2.1,1.8,3.6,1.8c1.5,0,2.7-0.6,3.6-1.8c0.8-1.2,1.3-3,1.3-5.3V78.9z" id="XMLID_893_" /><path class="stt2" d="M103.7,73.6c0-2.1,0.7-3.8,2-5.2c1.3-1.4,3.2-2.1,5.6-2.1c2.4,0,4.3,0.7,5.7,2.1      c1.3,1.4,2,3.1,2,5.2v1.9c0,2.1-0.7,3.8-2,5.2c-1.3,1.4-3.2,2.1-5.6,2.1c-2.4,0-4.3-0.7-5.7-2.1c-1.4-1.4-2-3.1-2-5.2V73.6z       M108.4,75.5c0,0.9,0.3,1.7,0.8,2.4c0.5,0.6,1.3,1,2.2,1c0.9,0,1.7-0.3,2.2-1c0.5-0.6,0.8-1.4,0.8-2.4v-1.9      c0-0.9-0.3-1.7-0.8-2.4c-0.5-0.7-1.2-1-2.2-1c-1,0-1.7,0.3-2.2,1c-0.5,0.7-0.8,1.4-0.8,2.4V75.5z M112.6,99.4l-3.4-1.8      l17.2-27.5l3.4,1.8L112.6,99.4z M120.6,93.4c0-2.1,0.7-3.8,2-5.2c1.4-1.4,3.2-2.1,5.6-2.1c2.4,0,4.3,0.7,5.6,2.1      c1.3,1.4,2,3.1,2,5.2v1.9c0,2.1-0.7,3.8-2,5.2c-1.3,1.4-3.2,2.1-5.6,2.1c-2.4,0-4.3-0.7-5.7-2.1c-1.4-1.4-2-3.1-2-5.2V93.4z       M125.2,95.3c0,0.9,0.3,1.7,0.8,2.4c0.6,0.7,1.3,1,2.2,1c1,0,1.8-0.3,2.2-0.9c0.5-0.6,0.7-1.4,0.7-2.4v-1.9      c0-0.9-0.3-1.7-0.8-2.4c-0.5-0.7-1.2-1-2.2-1c-1,0-1.7,0.3-2.2,1c-0.5,0.7-0.8,1.4-0.8,2.4V95.3z" id="XMLID_871_" /></g></g></g></g></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+
+               
+
+
+                <!--Container END-->
+            </div>
+        <!--tools-->
+        <div id="-open-tools">
+            <div id="tools">
+                
+            </div>
+        </div>
+        <!--tools END-->
+   </div><!--containerFluid-->
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+</body>
+</html>
